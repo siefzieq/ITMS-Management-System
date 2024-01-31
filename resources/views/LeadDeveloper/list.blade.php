@@ -4,7 +4,7 @@
 @section('content')
     <h2>Progress Report</h2>
     <div class="d-flex justify-content-between align-items-center">
-        <p>LList of Progress Report</p>
+        <p>List of Progress Report</p>
         <div class="d-flex align-items-center">
             <a href="{{route('progress.index')}}" class="btn" role="button" aria-pressed="true" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Grid view">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">

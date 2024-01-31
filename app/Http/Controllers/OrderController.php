@@ -81,11 +81,11 @@ class OrderController extends Controller
     public function update(Request $request, Order $order)
     {
         $validated = $request->validate([
-            'requestor' => 'required|min:4|string|max:255',
-            'mobile' => 'required|min:6|string|max:255',
-            'BU' => 'required|string|in:web-based,mobile,HumanResource,InternationalOffice',
-            'project_title' => 'required|min:6|string|max:255',
-            'summary' => 'required|min:6|string|max:255',
+            'requestor' => 'min:4|string|max:255',
+            'mobile' => 'min:6|string|max:255',
+            'BU' => 'string|in:web-based,mobile,HumanResource,InternationalOffice',
+            'project_title' => 'min:6|string|max:255',
+            'summary' => 'min:6|string|max:255',
         ]);
 
         $order->update($request->all());

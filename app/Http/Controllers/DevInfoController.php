@@ -46,7 +46,7 @@ class DevInfoController extends Controller
         ]);
         */
         $devInfo = new devInfo;
-        $devInfo->project_id =  $request->project_title;
+        $devInfo->project_id =  $request->project_id;
         $devInfo->dev_method =  $request->dev_method;
         $devInfo->platform =  $request->platform;
         $devInfo->type =  $request->type;

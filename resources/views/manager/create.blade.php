@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group">
                             <label>Person In-Charge</label>
-                            <input type="text" class="form-control" name="PIC" id="PIC" placeholder="Enter the PIC's name">
+                            <input type="text" class="form-control" name="PIC" id="PIC" placeholder="Enter the PIC's name" value="Dr. Ts. Mohd Hazli bin Mohamed Zabil" readonly>
                         </div>
                         <div class="form-group">
                             <label>Project Start Date</label>

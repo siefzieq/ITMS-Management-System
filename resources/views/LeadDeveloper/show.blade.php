@@ -30,8 +30,10 @@
                 @csrf
                 @method('DELETE')
                 <a class="btn text-white" style=background-color:#0461AA; href="{{route('progress.index',$progress->id)}}">Back</a>
+                @can('isLead')
                 <a class="btn text-white" style=background-color:#007ea7; href="{{route('progress.edit', $progress->id)}}">Edit Details</a>
                 <input class="btn btn-danger" type="submit" value="Delete" onclick="return confirm('Confirm DELETE? this request {{ $progress->project->project_title }}')">
+                @endcan
             </form>
 
         </div>

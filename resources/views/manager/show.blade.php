@@ -57,10 +57,8 @@
                 @csrf
                 @method('DELETE')
                 <a class="btn text-white" style=background-color:#0461AA; href="{{route('project.index')}}">Back</a>
-                @can('isLead')
                 <a class="btn text-white" style=background-color:#007ea7; href="{{route('project.edit', $project->id)}}">Edit Details</a>
                 <input class="btn btn-danger" type="submit" value="Delete" onclick="return confirm('Confirm DELETE? this request {{ $project->project_title }}')">
-                @endcan
             </form>
         </div>
         <br><br>

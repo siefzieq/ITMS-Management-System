@@ -37,7 +37,7 @@
                         <h3 class="card-title">Project {{ $i++ }}</h3>
                         <h5>{{$d->projects->project_title??'None'}}</h5>
                         <p>{{$d->platform}}</p>
-                        <a class="btn btn-info float-right" href="{{ route('devInfo.show', $d->id) }}">More info</a>
+                        <a class="btn float-right text-white" style="background-color:#0461AA"; href="{{ route('devInfo.show', $d->id) }}">More info</a>
                     </div>
                 </div>
                 <br>
